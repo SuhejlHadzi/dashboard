@@ -43,6 +43,7 @@ const CloseIcon = styled(ChevronLeftIcon, ChevronRightIcon)`
   }
 `;
 
+
 export default function App() {
   const stored = localStorage.getItem("isDarkMode");
   const [isDarkMode, setIsDarkMode] = useState(

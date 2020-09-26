@@ -18,7 +18,6 @@ const Headline = styled.h1`
 function Overview() {
   return (
     <Wrapper>
-      <Headline>Overview</Headline>
       <Table />
     </Wrapper>
   );

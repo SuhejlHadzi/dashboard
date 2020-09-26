@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Chart1 from './chart1'
+import Chart1 from "./chart1";
+import Chart2 from "./chart2";
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start;
   align-content: center;
   padding-top: 25px;
@@ -19,8 +20,8 @@ const Headline = styled.h1`
 function Stats() {
   return (
     <Wrapper>
-      <Headline>Stats</Headline>
       <Chart1 />
+      <Chart2 />
     </Wrapper>
   );
 }

@@ -4,7 +4,8 @@ import Chart from "react-apexcharts";
 
 const Wrapper = styled.div`
   margin-top: 20px;
-  width: 600px;
+  margin-right: 10px;
+  width: 48%;
   height: 410px;
   background: ${(props) => props.theme.colors.cardBackground};
   padding-top: 20px;
@@ -20,10 +21,12 @@ const state = {
   series: [
     {
       name: "Investment",
+      color: "#7971EA",
       data: [31, 40, 28, 51, 109, 100],
     },
     {
       name: "Earnings",
+      color: "#71EA8E",
       data: [11, 32, 45, 32, 52, 41],
     },
   ],
@@ -75,7 +78,6 @@ const state = {
         shade: "light",
         type: "horizontal",
         shadeIntensity: 0.5,
-        gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
         opacityFrom: 0,
         opacityTo: 0.8,
         stops: [0, 50, 100],

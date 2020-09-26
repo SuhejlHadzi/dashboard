@@ -17,3 +17,6 @@
 img {
   object-fit: fill;
 }
+.MuiLinearProgress-bar1Determinate {
+  background-color: #7971ea !important;
+}

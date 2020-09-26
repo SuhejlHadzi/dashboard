@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import Table from "./Table";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,12 +11,17 @@ const Wrapper = styled.div`
   padding-left: 30px;
 `;
 
-function Calendar() {
+const Headline = styled.h1`
+  color: ${(props) => props.theme.colors.primaryColor};
+`;
+
+function Overview() {
   return (
     <Wrapper>
-      <h1>Calendar</h1>
+      <Headline>Overview</Headline>
+      <Table />
     </Wrapper>
   );
 }
 
-export default Calendar;
+export default Overview;

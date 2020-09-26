@@ -14,7 +14,7 @@ import Header from "./components/Header/Header";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import MainContent from "./components/Main/MainContent";
 import { useStyles } from "./components/ViewStyles";
-import Calendar from "./components/Calendar/Calendar";
+import Overview from "./components/Overview/Overview";
 import Stats from "./components/Stats/Stats";
 import Settings from "./components/settings/settings";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -42,7 +42,6 @@ const CloseIcon = styled(ChevronLeftIcon, ChevronRightIcon)`
     color: ${(props) => props.theme.colors.primaryColor};
   }
 `;
-
 
 export default function App() {
   const stored = localStorage.getItem("isDarkMode");
@@ -106,7 +105,7 @@ export default function App() {
             <div className={classes.toolbar} />
             <Switch>
               <Route path="/" exact component={MainContent} />
-              <Route path="/Calendar" component={Calendar} />
+              <Route path="/Overview" component={Overview} />
               <Route path="/Statistics" component={Stats} />
               <Route path="/Settings" component={Settings} />
             </Switch>

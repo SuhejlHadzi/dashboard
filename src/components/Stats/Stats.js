@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Chart1 from './chart1'
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,10 +12,15 @@ const Wrapper = styled.div`
   padding-left: 30px;
 `;
 
+const Headline = styled.h1`
+  color: ${(props) => props.theme.colors.primaryColor};
+`;
+
 function Stats() {
   return (
     <Wrapper>
-      <h1>Stats</h1>
+      <Headline>Stats</Headline>
+      <Chart1 />
     </Wrapper>
   );
 }

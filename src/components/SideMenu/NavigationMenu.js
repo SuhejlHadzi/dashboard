@@ -41,10 +41,10 @@ function NavigationMenu() {
         />
       </Link>
 
-      <Link to="/Calendar">
+      <Link to="/Overview">
         <NavigationMenuButtons
           icon={<AssignmentIcon fontSize="small" />}
-          name="Calendar"
+          name="Overview"
         />
       </Link>
       <Link to="/Statistics">

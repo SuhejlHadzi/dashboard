@@ -77,7 +77,7 @@ const state = {
         shadeIntensity: 0.5,
         gradientToColors: undefined, // optional, if not defined - uses the shades of same color in series
         opacityFrom: 0,
-        opacityTo: 1,
+        opacityTo: 0.8,
         stops: [0, 50, 100],
         colorStops: [],
       },

@@ -9,14 +9,14 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import SideMenu from "./components/SideMenu/SideMenu";
-import Header from "./components/Header/Header";
+import SideMenu from "./Containers/SideMenu";
+import Header from "./Containers/Header";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import MainContent from "./components/Main/MainContent";
 import { useStyles } from "./components/ViewStyles";
-import Overview from "./components/Overview/Overview";
-import Stats from "./components/Stats/Stats";
-import Settings from "./components/settings/settings";
+import Overview from "./Containers/Overview";
+import Stats from "./Containers/Stats";
+import Settings from "./Containers/settings";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Globalstyle = createGlobalStyle`

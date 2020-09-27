@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import NavigationMenu from "./NavigationMenu";
-import User from "./User";
+import NavigationMenu from "../components/SideMenu/NavigationMenu";
+import User from "../components/SideMenu/User";
 
 const SideMenuWrapper = styled.div`
   height: 85%;

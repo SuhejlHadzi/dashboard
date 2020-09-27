@@ -5,7 +5,7 @@ import Chart from "react-apexcharts";
 const Wrapper = styled.div`
   margin-top: 20px;
   padding-top: 20px;
-  width: 48%;
+  width: 600px;
   height: 410px;
   background: ${(props) => props.theme.colors.cardBackground};
   border-radius: 10px;

@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import Searchbar from "./Searchbar";
+import Searchbar from "../components/Header/Searchbar";
 import BrightnessMediumIcon from "@material-ui/icons/BrightnessMedium";
 import Tooltip from "@material-ui/core/Tooltip";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import clsx from "clsx";
-import { useStyles } from "../ViewStyles";
+import { useStyles } from "../components/ViewStyles";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 

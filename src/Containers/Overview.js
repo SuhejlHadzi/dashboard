@@ -1,11 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Chart1 from "./chart1";
-import Chart2 from "./chart2";
-
+import Table from "../components/Overview/Table";
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
   align-content: center;
   padding-top: 25px;
@@ -17,13 +15,12 @@ const Headline = styled.h1`
   color: ${(props) => props.theme.colors.primaryColor};
 `;
 
-function Stats() {
+function Overview() {
   return (
     <Wrapper>
-      <Chart1 />
-      <Chart2 />
+      <Table />
     </Wrapper>
   );
 }
 
-export default Stats;
+export default Overview;

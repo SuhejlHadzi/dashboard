@@ -8,6 +8,9 @@ const Input = styled.input`
   width: 100%;
   background: transparent;
   color: ${(props) => props.theme.colors.primaryColor};
+  &:focus::placeholder {
+    color: transparent;
+  }
 `;
 const Form = styled.form`
   display: flex;

@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Table from "./Table";
+import Chart1 from "../components/Stats/chart1";
+import Chart2 from "../components/Stats/chart2";
+
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start;
+  flex-wrap: wrap;
   align-content: center;
   padding-top: 25px;
   width: 100%;
@@ -15,12 +18,13 @@ const Headline = styled.h1`
   color: ${(props) => props.theme.colors.primaryColor};
 `;
 
-function Overview() {
+function Stats() {
   return (
     <Wrapper>
-      <Table />
+      <Chart1 />
+      <Chart2 />
     </Wrapper>
   );
 }
 
-export default Overview;
+export default Stats;

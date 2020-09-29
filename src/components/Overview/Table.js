@@ -60,6 +60,7 @@ const rows = [
     6.0,
     <ProgressBar value="20" />
   ),
+  createData("IOS App", <Team max="3" />, 6.0, <ProgressBar value="20" />),
   createData(
     "Server Maintainance",
     <Team max="1" />,

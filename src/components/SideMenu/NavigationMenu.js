@@ -19,6 +19,7 @@ const Link = styled(NavLink)`
   color: ${(props) => props.theme.colors.primaryColor};
   border-radius: 0 50px 50px 0;
   margin-bottom: 1px;
+  margin-left: -3px;
   text-decoration: none;
   &.active {
     background: ${(props) => props.theme.colors.accentColor};
@@ -41,18 +42,20 @@ function NavigationMenu() {
         />
       </Link>
 
-      <Link to="/Overview">
-        <NavigationMenuButtons
-          icon={<AssignmentIcon fontSize="small" />}
-          name="Overview"
-        />
-      </Link>
       <Link to="/Statistics">
         <NavigationMenuButtons
           icon={<AssessmentIcon fontSize="small" />}
           name="Statistics"
         />
       </Link>
+
+      <Link to="/Overview">
+        <NavigationMenuButtons
+          icon={<AssignmentIcon fontSize="small" />}
+          name="Overview"
+        />
+      </Link>
+
       <Link to="/Settings">
         <NavigationMenuButtons
           icon={<SettingsIcon fontSize="small" />}

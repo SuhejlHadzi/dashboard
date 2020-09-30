@@ -10,7 +10,7 @@ const PostButton = styled(Button)`
     font-size: 14px;
     align-items: center;
     text-transform: none;
-    width: 170px;
+    width: 210px;
     padding: 5px 10px 5px 0;
     height: 45px;
     background: ${(props) => props.theme.colors.cardBackground};

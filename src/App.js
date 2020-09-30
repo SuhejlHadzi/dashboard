@@ -12,7 +12,7 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import SideMenu from "./Containers/SideMenu";
 import Header from "./Containers/Header";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
-import MainContent from "./components/Main/MainContent";
+import Dashboard from "./components/Main/Dashboard";
 import { useStyles } from "./components/ViewStyles";
 import Overview from "./Containers/Overview";
 import Stats from "./Containers/Stats";
@@ -22,7 +22,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const Globalstyle = createGlobalStyle`
   body {
   background: ${(props) => props.theme.colors.background};
-  
+  transition: background 0.3s;
   }
 `;
 
@@ -104,7 +104,7 @@ export default function App() {
           <ContentWrapper>
             <div className={classes.toolbar} />
             <Switch>
-              <Route path="/" exact component={MainContent} />
+              <Route path="/" exact component={Dashboard} />
               <Route path="/Overview" component={Overview} />
               <Route path="/Statistics" component={Stats} />
               <Route path="/Settings" component={Settings} />

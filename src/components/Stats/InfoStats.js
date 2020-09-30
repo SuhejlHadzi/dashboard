@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   margin-top: 20px;
   padding-top: 20px;
   width: 396px;
-  height: 200px;
+  height: 195px;
   margin-right: 10px;
   background: ${(props) => props.theme.colors.cardBackground};
   border-radius: 10px;

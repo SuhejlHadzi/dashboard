@@ -13,6 +13,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 const TopBar = styled(AppBar)`
   && {
     background: ${(props) => props.theme.colors.background};
+    transition: background 0.3s;
     box-shadow: none;
     color: ${(props) => props.theme.colors.primaryColor};
   }

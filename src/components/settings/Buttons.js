@@ -3,11 +3,11 @@ import styled from "styled-components";
 import Button from "@material-ui/core/Button";
 
 const Wrapper = styled.div`
-  height: 300px;
+  height: 230px;
   border-radius: 10px;
   background: ${(props) => props.theme.colors.cardBackground};
   width: 500px;
-  padding: 20px;
+  padding:  20px;
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
 `;
 
@@ -16,7 +16,7 @@ const ButtonsWrapper = styled.div`
 `;
 const Title = styled.h2`
   color: ${(props) => props.theme.colors.primaryColor};
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 const Primary = styled(Button)`
@@ -25,8 +25,9 @@ const Primary = styled(Button)`
     color: #fff;
     text-transform: none;
     transition: box-shadow 0.5s;
-    border-radius: ${(props) => (props.rounded ? "50px" : "0")};
+    border-radius: ${(props) => (props.rounded ? "50px" : "5px")};
     width: ${(props) => (props.rounded ? "90px" : "")};
+    margin-top: 5px;
   }
 `;
 const Success = styled(Button)`
@@ -35,8 +36,9 @@ const Success = styled(Button)`
     color: #fff;
     text-transform: none;
     margin-left: 10px;
-    border-radius: ${(props) => (props.rounded ? "50px" : "0")};
+    border-radius: ${(props) => (props.rounded ? "50px" : "5px")};
     width: ${(props) => (props.rounded ? "90px" : "")};
+    margin-top: 5px;
   }
 `;
 
@@ -46,8 +48,9 @@ const Info = styled(Button)`
     color: #fff;
     text-transform: none;
     margin-left: 10px;
-    border-radius: ${(props) => (props.rounded ? "50px" : "0")};
+    border-radius: ${(props) => (props.rounded ? "50px" : "5px")};
     width: ${(props) => (props.rounded ? "60px" : "")};
+    margin-top: 5px;
   }
 `;
 
@@ -57,8 +60,9 @@ const Danger = styled(Button)`
     color: #fff;
     text-transform: none;
     margin-left: 10px;
-    border-radius: ${(props) => (props.rounded ? "50px" : "0")};
+    border-radius: ${(props) => (props.rounded ? "50px" : "5px")};
     width: ${(props) => (props.rounded ? "80px" : "")};
+    margin-top: 5px;
   }
 `;
 const Warning = styled(Button)`
@@ -67,8 +71,9 @@ const Warning = styled(Button)`
     color: #fff;
     text-transform: none;
     margin-left: 10px;
-    border-radius: ${(props) => (props.rounded ? "50px" : "0")};
+    border-radius: ${(props) => (props.rounded ? "50px" : "5px")};
     width: ${(props) => (props.rounded ? "90px" : "")};
+    margin-top: 5px;
   }
 `;
 function Buttons() {

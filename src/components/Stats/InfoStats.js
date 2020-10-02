@@ -23,7 +23,8 @@ const Text = styled.p`
   color: ${(props) => props.theme.colors.primaryColor};
 `;
 
-const ChartWrapper = styled(Chart)``;
+const ChartWrapper = styled(Chart)`
+`;
 
 const state = {
   series: [

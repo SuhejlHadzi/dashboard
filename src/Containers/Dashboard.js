@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import Cards from "./Cards";
+import Cards from "../components/Main/Cards";
 import Clock from "./Assets/clock.svg";
 import Mission from "./Assets/mission.svg";
 import Activity from "./Assets/activity.svg";
 import Reminder from "./Assets/reminder.svg";
-import ActivityRing from "./ActivityRing";
-import Users from "./Users";
-import RightContent from "./RightContent";
-import Timeline from "./Timeline";
-import GoogleApps from "./GoogleApps";
+import ActivityRing from "../components/Main/ActivityRing";
+import Users from "../components/Main/Users";
+import RightContent from "../components/Main/RightContent";
+import Timeline from "../components/Main/Timeline";
+import GoogleApps from "../components/Main/GoogleApps";
 
 const Wrapper = styled.div`
   display: flex;

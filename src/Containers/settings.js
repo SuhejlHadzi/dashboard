@@ -5,7 +5,8 @@ import Buttons from "../components/settings/Buttons";
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: start;
   align-content: center;
   padding-top: 25px;

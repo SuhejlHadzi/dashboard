@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import NavigationMenu from "../components/SideMenu/NavigationMenu";
-import User from "../components/SideMenu/User";
+import NavigationMenu from "./NavigationMenu";
+import User from "./User";
 
 const SideMenuWrapper = styled.div`
-  height: 85%;
+  height: 85vh;
   margin-top: 15px;
   border-radius: 20px;
   background: ${(props) => props.theme.colors.cardBackground};

@@ -30,8 +30,7 @@ function Cards(props) {
   return (
     <div>
       <Square>
-        {" "}
-        <img src={props.icons} alt="card-icons" />{" "}
+        <img src={props.icons} alt="card-icons" />
       </Square>
       <Text>{props.name}</Text>
     </div>

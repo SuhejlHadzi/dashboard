@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   padding: 20px;
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
   margin-bottom: 30px;
+  margin-right: 20px;
 `;
 
 const AlertsWrapper = styled.div`

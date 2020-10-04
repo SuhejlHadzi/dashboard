@@ -73,10 +73,10 @@ export default function OppositeContentTimeline() {
       <Timeline align="alternate">
         <TimelineItem>
           <TimelineOppositeContent>
-            <Text time>09:30 am</Text>
+            <Text time="true">09:30 am</Text>
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <Dot blue>
+            <Dot blue="true">
               <WorkIcon />
             </Dot>
             <TimelineConnector />
@@ -87,7 +87,7 @@ export default function OppositeContentTimeline() {
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent>
-            <Text time>10:00 am</Text>
+            <Text time="true">10:00 am</Text>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <Dot>
@@ -101,10 +101,10 @@ export default function OppositeContentTimeline() {
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent>
-            <Text time>12:00 am</Text>
+            <Text time="true">12:00 am</Text>
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <Dot blue>
+            <Dot blue="true">
               <FitnessCenterIcon />
             </Dot>
             <TimelineConnector />
@@ -115,7 +115,7 @@ export default function OppositeContentTimeline() {
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent>
-            <Text time>9:00 am</Text>
+            <Text time="true">9:00 am</Text>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <Dot>

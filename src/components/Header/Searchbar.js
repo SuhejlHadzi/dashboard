@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import SearchIcon from "@material-ui/icons/Search";
-import Button from "@material-ui/core/Button";
 
 const Input = styled.input`
   border: none;

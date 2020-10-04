@@ -80,7 +80,8 @@ function ActivityRing() {
         type="radialBar"
       />
       <CardText>
-        <StatDot green /> Work <StatDot blue /> Learn <StatDot red /> Research
+        <StatDot green="true" /> Work <StatDot blue="true" /> Learn
+        <StatDot red="true" /> Research
       </CardText>
     </Card>
   );

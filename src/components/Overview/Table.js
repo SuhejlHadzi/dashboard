@@ -56,36 +56,36 @@ function createData(name, projects, tasks, progress) {
 const rows = [
   createData(
     "Website Building",
-    <Team max="4" />,
+    <Team max={4} />,
     6.0,
-    <ProgressBar value="20" />
+    <ProgressBar value={20} />
   ),
-  createData("IOS App", <Team max="3" />, 6.0, <ProgressBar value="20" />),
+  createData("IOS App", <Team max={3} />, 6.0, <ProgressBar value={20} />),
   createData(
     "Server Maintainance",
-    <Team max="1" />,
+    <Team max={2} />,
     9.0,
-    <ProgressBar value="70" />
+    <ProgressBar value={70} />
   ),
-  createData("E-learning", <Team max="3" />, 16.0, <ProgressBar value="80" />),
+  createData("E-learning", <Team max={3} />, 16.0, <ProgressBar value={80} />),
   createData(
     "App Development",
-    <Team max="5" />,
+    <Team max={5} />,
     32,
-    <ProgressBar value="40" />
+    <ProgressBar value={40} />
   ),
   createData(
     "Booking Website",
-    <Team max="2" />,
+    <Team max={2} />,
     1,
-    <ProgressBar value="35" />
+    <ProgressBar value={35} />
   ),
-  createData("Logo Design", <Team max="4" />, 29, <ProgressBar value="90" />),
+  createData("Logo Design", <Team max={4} />, 29, <ProgressBar value={40} />),
   createData(
     "Branding For Nike",
-    <Team max="3" />,
+    <Team max={3} />,
     16,
-    <ProgressBar value="50" />
+    <ProgressBar value={50} />
   ),
 ];
 
@@ -96,9 +96,9 @@ export default function BasicTable() {
         <Thead>
           <Row>
             <HeaderCell>Projects</HeaderCell>
-            <HeaderCell align="start">Team</HeaderCell>
-            <HeaderCell align="start">Tasks</HeaderCell>
-            <HeaderCell align="start">Progress</HeaderCell>
+            <HeaderCell align="inherit">Team</HeaderCell>
+            <HeaderCell align="inherit">Tasks</HeaderCell>
+            <HeaderCell align="inherit">Progress</HeaderCell>
           </Row>
         </Thead>
         <TableBody>
@@ -107,9 +107,9 @@ export default function BasicTable() {
               <RowCell component="th" scope="row">
                 {row.name}
               </RowCell>
-              <RowCell align="start">{row.projects}</RowCell>
-              <RowCell align="start">{row.tasks}</RowCell>
-              <RowCell align="start">{row.progress}</RowCell>
+              <RowCell align="inherit">{row.projects}</RowCell>
+              <RowCell align="inherit">{row.tasks}</RowCell>
+              <RowCell align="inherit">{row.progress}</RowCell>
             </Row>
           ))}
         </TableBody>

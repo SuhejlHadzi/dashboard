@@ -11,10 +11,6 @@ const Wrapper = styled.div`
   padding-left: 30px;
 `;
 
-const Headline = styled.h1`
-  color: ${(props) => props.theme.colors.primaryColor};
-`;
-
 function Overview() {
   return (
     <Wrapper>

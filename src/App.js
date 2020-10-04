@@ -10,7 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import SideMenu from "./components/SideMenu/SideMenu";
-import Header from "./Containers/Header";
+import Header from "./components/Header/Header";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import Dashboard from "./Containers/Dashboard";
 import { useStyles } from "./components/ViewStyles";
@@ -30,7 +30,7 @@ const AppDrawer = styled(Drawer)`
   && {
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.primaryColor};
-    height: 100%;
+    height: 100vh;
   }
 `;
 const ContentWrapper = styled.div`

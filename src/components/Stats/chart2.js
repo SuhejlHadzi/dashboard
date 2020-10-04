@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
   @media (max-width: 768px) {
     width: 300px;
-    height:280px;
+    height: 280px;
   }
 `;
 

@@ -3,12 +3,14 @@ import styled from "styled-components";
 import Button from "@material-ui/core/Button";
 
 const Wrapper = styled.div`
-  height: 230px;
+  height: 300px;
   border-radius: 10px;
   background: ${(props) => props.theme.colors.cardBackground};
-  width: 500px;
-  padding:  20px;
+  width: 560px;
+  padding: 20px;
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
+  margin-bottom: 20px;
+  margin-right: 20px;
 `;
 
 const ButtonsWrapper = styled.div`
@@ -88,11 +90,11 @@ function Buttons() {
         <Warning>Warning</Warning>
       </ButtonsWrapper>
       <Title>Rounded Buttons </Title>
-      <Primary rounded>Primary</Primary>
-      <Success rounded>Success</Success>
-      <Info rounded>Info</Info>
-      <Danger rounded>Danger</Danger>
-      <Warning rounded>Warning</Warning>
+      <Primary rounded="true">Primary</Primary>
+      <Success rounded="true">Success</Success>
+      <Info rounded="true">Info</Info>
+      <Danger rounded="true">Danger</Danger>
+      <Warning rounded="true">Warning</Warning>
     </Wrapper>
   );
 }

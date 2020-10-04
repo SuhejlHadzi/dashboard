@@ -45,7 +45,7 @@ const RowCell = styled(TableCell)`
     color: ${(props) => props.theme.colors.primaryColor};
     text-transform: none;
     font-family: inherit;
-    width: 100px;
+    width: 10%;
   }
 `;
 
@@ -96,9 +96,9 @@ export default function BasicTable() {
         <Thead>
           <Row>
             <HeaderCell>Projects</HeaderCell>
-            <HeaderCell align="center">Team</HeaderCell>
-            <HeaderCell align="center">Tasks</HeaderCell>
-            <HeaderCell align="center">Progress</HeaderCell>
+            <HeaderCell align="start">Team</HeaderCell>
+            <HeaderCell align="start">Tasks</HeaderCell>
+            <HeaderCell align="start">Progress</HeaderCell>
           </Row>
         </Thead>
         <TableBody>
@@ -107,9 +107,9 @@ export default function BasicTable() {
               <RowCell component="th" scope="row">
                 {row.name}
               </RowCell>
-              <RowCell align="center">{row.projects}</RowCell>
-              <RowCell align="center">{row.tasks}</RowCell>
-              <RowCell align="center">{row.progress}</RowCell>
+              <RowCell align="start">{row.projects}</RowCell>
+              <RowCell align="start">{row.tasks}</RowCell>
+              <RowCell align="start">{row.progress}</RowCell>
             </Row>
           ))}
         </TableBody>

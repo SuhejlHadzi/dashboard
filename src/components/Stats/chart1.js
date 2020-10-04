@@ -11,11 +11,18 @@ const Wrapper = styled.div`
   padding-top: 20px;
   border-radius: 10px;
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 280px;
+  }
 `;
 
 const ChartWrapper = styled(Chart)`
   width: 600px;
   height: 400px;
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 const state = {
   series: [

@@ -4,7 +4,6 @@ import Chart from "react-apexcharts";
 
 const Wrapper = styled.div`
   margin-top: 20px;
-  padding-top: 20px;
   width: 396px;
   height: 195px;
   margin-right: 10px;
@@ -13,6 +12,10 @@ const Wrapper = styled.div`
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
   display: flex;
   justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 const ChartHeader = styled.h1`
@@ -24,6 +27,10 @@ const Text = styled.p`
 `;
 
 const ChartWrapper = styled(Chart)`
+  @media (max-width: 768px) {
+    width: 300px;
+    margin: -50px;
+  }
 `;
 
 const state = {

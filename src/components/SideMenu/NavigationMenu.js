@@ -18,7 +18,7 @@ const NavWrapper = styled.div`
 const Link = styled(NavLink)`
   color: ${(props) => props.theme.colors.primaryColor};
   border-radius: 0 50px 50px 0;
-  margin-bottom: 1px;
+
   margin-left: -3px;
   text-decoration: none;
   &.active {
@@ -27,7 +27,7 @@ const Link = styled(NavLink)`
   }
   &:hover {
     background: ${(props) => props.theme.colors.accentColor};
-    color: #fff;
+
     cursor: pointer;
   }
 `;

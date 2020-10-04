@@ -12,7 +12,9 @@ const UserWrapper = styled.div`
   font-size: 14px;
   padding-left: 3px;
   padding-bottom: 10px;
-
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const Name = styled.p`

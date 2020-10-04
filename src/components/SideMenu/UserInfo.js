@@ -40,6 +40,7 @@ const TextWrapper = styled.div`
   align-items: center;
   &:hover {
     background: rgba(100, 70, 234, 0.3);
+    cursor: pointer;
   }
 `;
 const Text = styled.h4`

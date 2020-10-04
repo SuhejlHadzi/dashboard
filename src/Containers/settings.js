@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Alerts from "../components/settings/Alerts";
 import Buttons from "../components/settings/Buttons";
+import Form from "../components/settings/Form";
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,6 +20,7 @@ function Settings() {
     <Wrapper>
       <Alerts />
       <Buttons />
+      <Form />
     </Wrapper>
   );
 }

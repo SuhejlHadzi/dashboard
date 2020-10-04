@@ -7,8 +7,7 @@ const Progress = styled(LinearProgress)`
     height: 10px;
     border-radius: 5px;
     background: #ccc;
-    width: 150px;
-    margin-left: 30%;
+    width: 60%;
   }
 `;
 

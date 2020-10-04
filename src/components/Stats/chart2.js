@@ -10,11 +10,18 @@ const Wrapper = styled.div`
   background: ${(props) => props.theme.colors.cardBackground};
   border-radius: 10px;
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
+  @media (max-width: 768px) {
+    width: 300px;
+    height:280px;
+  }
 `;
 
 const ChartWrapper = styled(Chart)`
   width: 600px;
   height: 200px;
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 const state = {

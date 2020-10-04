@@ -10,9 +10,7 @@ import styled from "styled-components";
 
 const TeamContainer = styled(AvatarGroup)`
   && {
-    width: 0px;
     height: 40px;
-    margin-left: 35px;
   }
 `;
 

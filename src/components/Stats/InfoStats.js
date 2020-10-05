@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 768px) {
-    width: 300px;
+    width: 250px;
   }
 `;
 
@@ -28,8 +28,7 @@ const Text = styled.p`
 
 const ChartWrapper = styled(Chart)`
   @media (max-width: 768px) {
-    width: 300px;
-    margin: -50px;
+   display: none;
   }
 `;
 

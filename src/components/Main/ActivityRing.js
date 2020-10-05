@@ -11,6 +11,10 @@ const Card = styled.div`
   margin-bottom: 20px;
   background: ${(props) => props.theme.colors.cardBackground};
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
+  @media (max-width: 768px) {
+    width: 235px;
+    height: 320px;
+  }
 `;
 const CardHeader = styled.div`
   display: flex;

@@ -14,6 +14,9 @@ const Wrapper = styled.div`
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
   margin-bottom: 30px;
   margin-right: 20px;
+  @media (max-width: 768px) {
+    width: 250px;
+  }
 `;
 
 const AlertsWrapper = styled.div`
@@ -39,6 +42,10 @@ const Alert = styled.div`
     (props.danger && "RGBA(255,65,77,0.3)") ||
     (props.warning && "RGBA(255,211,29,0.3)")};
   border-radius: 5px;
+  @media (max-width: 768px) {
+    width: 225px;
+    margin-left: -8px;
+  }
 `;
 
 const Text = styled.p`

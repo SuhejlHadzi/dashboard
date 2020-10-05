@@ -14,6 +14,10 @@ const SideMenuWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  @media (max-width: 768px) {
+    height: 70vh;
+    margin-left: -8px;
+  }
 `;
 
 function SideMenu() {

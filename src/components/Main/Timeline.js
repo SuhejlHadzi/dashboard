@@ -48,6 +48,10 @@ const TimelineWrapper = styled.div`
   align-items: center;
   margin-right: 20px;
   padding: 20px;
+  @media (max-width: 768px) {
+    width: 235px;
+    height: 370px;
+  }
 `;
 
 const CardHeader = styled.div`

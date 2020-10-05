@@ -11,6 +11,10 @@ const Wrapper = styled.div`
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
   margin-bottom: 20px;
   margin-right: 20px;
+  @media (max-width: 768px) {
+    width: 250px;
+    height: 400px;
+  }
 `;
 
 const ButtonsWrapper = styled.div`

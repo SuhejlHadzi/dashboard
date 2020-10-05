@@ -25,6 +25,16 @@ const HeaderWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   color: ${(props) => props.theme.colors.primaryColor};
+  @media (max-width: 768px) {
+    justify-content:start;
+    width: 400px;
+  }
+`;
+
+const Title = styled.h1`
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const SwitchHolder = styled.div`
   width: 40px;
@@ -38,6 +48,9 @@ const SwitchHolder = styled.div`
   transition: background-color 1s;
   transition: color 0.5s;
   color: ${(props) => props.theme.colors.primaryColor};
+  @media (max-width: 768px) {
+    margin-left: 63vw;
+  }
 
   &:hover {
     cursor: pointer;
@@ -73,7 +86,7 @@ function Header({
           <MenuIcon />
         </IconButton>
         <HeaderWrapper>
-          <h1>Dasboard</h1>
+          <Title>Dashboard</Title>
 
           <Searchbar />
 

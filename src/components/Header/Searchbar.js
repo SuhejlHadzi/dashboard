@@ -21,6 +21,9 @@ const Form = styled.form`
   background: ${(props) => props.theme.colors.cardBackground};
   border-radius: 5px;
   color: ${(props) => props.theme.colors.primaryColor};
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const SearchButton = styled.button`

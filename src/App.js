@@ -50,7 +50,7 @@ export default function App() {
   );
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -76,6 +76,8 @@ export default function App() {
           />
 
           <AppDrawer
+            onMouseOver={handleDrawerOpen}
+            onMouseLeave={handleDrawerClose}
             variant="permanent"
             className={clsx(classes.drawer, {
               [classes.drawerOpen]: open,

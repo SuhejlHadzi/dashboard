@@ -12,8 +12,8 @@ const Wrapper = styled.div`
   border-radius: 10px;
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};
   @media (max-width: 768px) {
-    width: 300px;
-    height: 280px;
+    width: 250px;
+    height: 200px;
   }
 `;
 
@@ -21,7 +21,7 @@ const ChartWrapper = styled(Chart)`
   width: 600px;
   height: 400px;
   @media (max-width: 768px) {
-    width: 300px;
+    width: 240px;
   }
 `;
 const state = {

@@ -28,6 +28,9 @@ const InfoWrapper = styled.div`
   box-shadow: 0px 5px 10px ${(props) => props.theme.colors.shadow};
   animation: ${rotate} 0.3s;
   color: #fff;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const TextWrapper = styled.div`

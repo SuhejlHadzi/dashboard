@@ -18,6 +18,7 @@ const Wrapper = styled.div`
   align-content: center;
   padding-top: 20px;
   width: 100%;
+  height: 88%;
   padding-left: 30px;
 `;
 
@@ -28,6 +29,14 @@ const LeftUpper = styled.div`
   flex-direction: row;
   justify-content: start;
   margin-top: 15px;
+  @media (min-width: 1500px) {
+    justify-content: center;
+    padding-right: 40px;
+  }
+  @media (max-width: 768px) {
+    justify-content: center;
+  
+  }
 `;
 const LeftLower = styled.div`
   width: 100%;
@@ -36,6 +45,13 @@ const LeftLower = styled.div`
   justify-content: start;
   flex-direction: row;
   flex-wrap: wrap;
+  @media (min-width: 1500px) {
+    justify-content: center;
+    padding-right: 40px;
+  }
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 function MainContent() {

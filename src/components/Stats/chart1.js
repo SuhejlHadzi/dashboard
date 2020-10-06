@@ -3,10 +3,12 @@ import styled from "styled-components";
 import Chart from "react-apexcharts";
 
 const Wrapper = styled.div`
-  margin-top: 20px;
-  margin-right: 10px;
-  width: 600px;
+  display: flex;
+  justify-content: center;
+  width: 47.3%;
   height: 410px;
+  margin-top: 20px;
+  margin-right: 20px;
   background: ${(props) => props.theme.colors.cardBackground};
   padding-top: 20px;
   border-radius: 10px;

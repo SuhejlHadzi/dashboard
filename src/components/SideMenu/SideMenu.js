@@ -15,8 +15,7 @@ const SideMenuWrapper = styled.div`
   justify-content: space-between;
   align-items: start;
   @media (max-width: 768px) {
-    height: 70vh;
-    margin-left: -8px;
+    margin-left: -7px;
   }
 `;
 

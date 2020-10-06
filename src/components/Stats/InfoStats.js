@@ -4,9 +4,9 @@ import Chart from "react-apexcharts";
 
 const Wrapper = styled.div`
   margin-top: 20px;
-  width: 396px;
+  width: 31%;
   height: 195px;
-  margin-right: 10px;
+  margin-right: 20px;
   background: ${(props) => props.theme.colors.cardBackground};
   border-radius: 10px;
   box-shadow: -5px 10px 10px ${(props) => props.theme.colors.shadow};

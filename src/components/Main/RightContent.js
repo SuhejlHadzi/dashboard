@@ -30,7 +30,7 @@ const UpperRight = styled.div`
   padding: 30px;
 
   @media (max-width: 768px) {
-    width: 151px;
+    display: none;
   }
 
   
@@ -38,12 +38,7 @@ const UpperRight = styled.div`
 
 const Illustration = styled.img`
   margin-top: 12px;
-  @media (max-width: 768px) {
-    width: 150px;
-    margin-top: 72px;
-    margin-left: -30px;
-    object-fit:contain;
-  }
+
 `;
 
 function RightContent() {

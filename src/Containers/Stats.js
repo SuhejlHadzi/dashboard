@@ -9,6 +9,9 @@ const Wrapper = styled.div`
   justify-content: start;
   flex-wrap: wrap;
   align-content: center;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
   padding-top: 5px;
   width: 100%;
   padding-left: 30px;

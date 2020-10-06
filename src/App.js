@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import lightTheme from "./themes/light";
 import darkTheme from "./themes/dark";
 import clsx from "clsx";
 import { useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import CssBaseline from "@material-ui/core/CssBaseline";
+
 import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
@@ -65,7 +65,7 @@ export default function App() {
       <div className={classes.root}>
         <ThemeProvider theme={isDarkMode ? lightTheme : darkTheme}>
           <Globalstyle />
-          <CssBaseline />
+
 
           <Header
             isDarkMode={isDarkMode}
@@ -76,8 +76,6 @@ export default function App() {
           />
 
           <AppDrawer
-            onMouseOver={handleDrawerOpen}
-            onMouseLeave={handleDrawerClose}
             variant="permanent"
             className={clsx(classes.drawer, {
               [classes.drawerOpen]: open,

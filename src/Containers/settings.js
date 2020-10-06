@@ -9,6 +9,9 @@ const Wrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: start;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
   align-content: center;
   padding-top: 25px;
   width: 100%;

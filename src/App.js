@@ -28,7 +28,6 @@ const Globalstyle = createGlobalStyle`
 
 const AppDrawer = styled(Drawer)`
   && {
-   
     color: ${(props) => props.theme.colors.primaryColor};
     height: 100vh;
   }
@@ -63,9 +62,8 @@ export default function App() {
   return (
     <Router>
       <div className={classes.root}>
-        <ThemeProvider theme={isDarkMode ? lightTheme : darkTheme}>
+        <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
           <Globalstyle />
-
 
           <Header
             isDarkMode={isDarkMode}

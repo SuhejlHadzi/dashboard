@@ -29,11 +29,13 @@ const useStyles = makeStyles((theme) => ({
     display: "none",
   },
   drawer: {
+    background: "none",
     width: drawerWidth,
     flexShrink: 0,
     whiteSpace: "nowrap",
   },
   drawerOpen: {
+    background: "none",
     border: "none",
     width: drawerWidth,
     transition: theme.transitions.create("width", {

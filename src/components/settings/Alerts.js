@@ -50,6 +50,7 @@ const Alert = styled.div`
 
 const Text = styled.p`
   margin-left: 10px;
+  font-size: 14px;
 `;
 
 export default function Alerts() {

@@ -4,8 +4,7 @@ import NavigationMenu from "./NavigationMenu";
 import User from "./User";
 
 const SideMenuWrapper = styled.div`
-  height: 85vh;
-  margin-top: 15px;
+  height: 90vh;
   border-radius: 20px;
   background: ${(props) => props.theme.colors.cardBackground};
   bottom: 0;

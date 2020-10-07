@@ -28,7 +28,7 @@ const Globalstyle = createGlobalStyle`
 
 const AppDrawer = styled(Drawer)`
   && {
-    background: ${(props) => props.theme.colors.background};
+   
     color: ${(props) => props.theme.colors.primaryColor};
     height: 100vh;
   }
@@ -104,7 +104,7 @@ export default function App() {
           <ContentWrapper>
             <div className={classes.toolbar} />
             <Switch>
-              <Route path="/" exact component={Dashboard} />
+              <Route path="/dashboard" exact component={Dashboard} />
               <Route path="/Overview" component={Overview} />
               <Route path="/Statistics" component={Stats} />
               <Route path="/Settings" component={Settings} />

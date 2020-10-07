@@ -15,6 +15,11 @@ const Square = styled(Button)`
       background: ${(props) => props.theme.colors.accentColor};
       box-shadow: 0px 5px 10px ${(props) => props.theme.colors.shadow};
     }
+    @media (max-width: 768px) {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 15px;
+    }
   }
 `;
 
@@ -24,6 +29,9 @@ const Text = styled.div`
   margin: 15px 0px 10px 1%;
 
   color: ${(props) => props.theme.colors.primaryColor};
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 function Cards(props) {

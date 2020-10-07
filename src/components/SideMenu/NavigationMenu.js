@@ -35,7 +35,7 @@ const Link = styled(NavLink)`
 function NavigationMenu() {
   return (
     <NavWrapper>
-      <Link to="/" exact>
+      <Link to="/dashboard" exact>
         <NavigationMenuButtons
           icon={<DashboardIcon fontSize="small" />}
           name="Dashboard"

@@ -20,6 +20,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 88%;
   padding-left: 30px;
+
 `;
 
 const LeftUpper = styled.div`
@@ -35,7 +36,6 @@ const LeftUpper = styled.div`
   }
   @media (max-width: 768px) {
     justify-content: center;
-  
   }
 `;
 const LeftLower = styled.div`
